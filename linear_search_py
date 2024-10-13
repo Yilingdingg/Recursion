@@ -1,0 +1,13 @@
+
+list=[19, 503, 46, 910, 3, 875, 70]
+
+number=int(input("Choose one of the values from the list to search for:"))
+
+def linear(list, number):
+    for i in range(len(list)):
+        if list[i]==number:
+            return i
+    else:
+        print("The value you chose isn't in the list.")
+
+print(linear(list, number))
